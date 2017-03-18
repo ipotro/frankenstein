@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "precommit": "npm t",
+    "lint:js": "eslint **/*.js",
     "test": "sass-lint --config .scss-lint.yml --verbose --no-exit"
   },
   "repository": {
@@ -27,6 +28,7 @@
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-preset-es2015": "^6.24.0",
+    "eslint": "^3.18.0",
     "husky": "^0.13.2",
     "node-sass": "^4.5.0",
     "sass-lint": "^1.10.2"
