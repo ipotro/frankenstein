@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "precommit": "npm t",
     "test": "sass-lint --config .scss-lint.yml --verbose --no-exit"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/ro9ues/frankenstein#readme",
   "devDependencies": {
+    "husky": "^0.13.2",
     "node-sass": "^4.5.0",
     "sass-lint": "^1.10.2"
   }
