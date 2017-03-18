@@ -1,0 +1,30 @@
+{
+  "name": "frankenstein",
+  "version": "1.0.0",
+  "description": "frankenstein programming language, small, elegant, implemented in Go.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "sass-lint --config .scss-lint.yml --verbose --no-exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ro9ues/frankenstein.git"
+  },
+  "keywords": [
+    "golang",
+    "programming-language",
+    "language",
+    "interpreter"
+  ],
+  "author": "rogues, an OBSESSIVE engineer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ro9ues/frankenstein/issues"
+  },
+  "homepage": "https://github.com/ro9ues/frankenstein#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.0",
+    "sass-lint": "^1.10.2"
+  }
+}
