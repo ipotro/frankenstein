@@ -1,0 +1,13 @@
+title: "The Frankenstein Programming Language"
+description: >
+  The Frankenstein Programming Language.
+  Small, elegant, implemented in Go.
+baseurl: ""
+url: "https://thefrankenste.in"
+author:
+  name: "rogues"
+  twitter: "ro9ues"
+
+# Build settings
+markdown: kramdown
+theme: minima
