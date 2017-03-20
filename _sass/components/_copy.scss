@@ -1,0 +1,49 @@
+@charset 'utf-8';
+
+.copy {
+  margin: 40px 0;
+
+  &__title {
+    font-size: 100%;
+    margin: 0;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      background-color: palette(dodger-blue);
+      border-radius: 50%;
+      content: '';
+      display: inline-block;
+      height: 6px;
+      left: -16px;
+      position: absolute;
+      top: 8px;
+      width: 6px;
+    }
+  }
+
+  &--heading {
+    color: white(1);
+  }
+
+  &--subheading {
+    margin-bottom: 35px;
+  }
+}
+
+.feature {
+  color: palette(dodger-blue);
+}
+
+
+.copyright {
+  color: palette(storm-gray);
+  margin-top: 50px;
+  text-align: center;
+}
