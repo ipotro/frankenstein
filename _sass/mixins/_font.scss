@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+// sass-lint:disable no-url-domains, no-url-protocols, no-duplicate-properties, indentation
+@mixin font($family, $style: normal, $weight: 600) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+
+  @if ($weight == 400) {
+    @if ($style == 'italic') {
+      src: url('https://storage.googleapis.com/ro9ues/fonts/dejavu-sans/dejavusans-mono-oblique.ttf') format('truetype');
+    } @else {
+      src: url('https://storage.googleapis.com/ro9ues/fonts/dejavu-sans/dejavusans-mono.ttf') format('truetype');
+    }
+  } @else {
+    src: url('https://storage.googleapis.com/ro9ues/fonts/dejavu-sans/dejavusans-mono-bold.ttf') format('truetype');
+  }
+}
+// sass-lint:enable no-url-domains, no-url-protocols, no-duplicate-properties, indentation

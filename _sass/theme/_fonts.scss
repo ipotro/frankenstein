@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+@font-face {
+  @include font('dejavu', normal, 400);
+}
+
+@font-face {
+  @include font('dejavu', italic, 400);
+}
+
+@font-face {
+  @include font('dejavu', normal, 600);
+}
