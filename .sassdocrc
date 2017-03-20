@@ -1,0 +1,15 @@
+basePath: "https://github.com/ro9ues/frankenstein"
+dest: "docs/sass"
+display:
+  access: ["private", "public"]
+  alias: true
+  watermark: true
+package:
+  title: "Frankenstein Docs"
+  name: "frankenstein-docs"
+  version: "0.1.0"
+  license: "MIT"
+  homepage: "https://thefrankenste.in"
+theme: "neat"
+groups:
+  undefined: Ungrouped

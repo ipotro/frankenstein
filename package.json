@@ -1,0 +1,47 @@
+{
+  "name": "frankenstein",
+  "version": "1.0.0",
+  "description": "frankenstein programming language, small, elegant, implemented in Go.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "precommit": "npm t",
+    "predocs": "rimraf docs",
+    "docs:sass": "sassdoc _sass/",
+    "docs": "npm run docs:sass",
+    "lint:js": "eslint tests/**/*.js",
+    "lint:sass": "sass-lint --config .scss-lint.yml --verbose --no-exit",
+    "pretest": "npm run lint:js && npm run lint:sass",
+    "test": "mocha tests/** --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ro9ues/frankenstein.git"
+  },
+  "keywords": [
+    "golang",
+    "programming-language",
+    "language",
+    "interpreter"
+  ],
+  "author": "rogues, an OBSESSIVE engineer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ro9ues/frankenstein/issues"
+  },
+  "homepage": "https://github.com/ro9ues/frankenstein#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.18.0",
+    "husky": "^0.13.2",
+    "mocha": "^3.2.0",
+    "node-sass": "^4.5.0",
+    "rimraf": "^2.6.1",
+    "sass-lint": "^1.10.2",
+    "sass-true": "^2.2.1",
+    "sassdoc": "^2.2.0",
+    "sassdoc-theme-neat": "0.0.2"
+  }
+}
